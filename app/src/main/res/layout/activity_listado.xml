@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="18dp"
+    android:background="@color/blanco">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Mis notas guardadas" android:textColor="@color/azul_marino"
+        android:textSize="27sp" android:textStyle="bold" android:layout_marginTop="35dp" />
+    <ProgressBar android:id="@+id/listaCarga" android:layout_width="36dp"
+        android:layout_height="36dp" android:layout_gravity="center"
+        android:indeterminateTint="@color/azul_principal"
+        android:visibility="gone" android:layout_marginTop="12dp" />
+    <TextView android:id="@+id/listaVacia" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:gravity="center" android:text="Todavía no tienes notas"
+        android:textColor="@color/gris" android:layout_marginTop="25dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaNotas" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+    <Button android:id="@+id/volverListado" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Regresar al dashboard"
+        android:backgroundTint="@color/azul_claro" android:textColor="@color/azul_marino" />
+</LinearLayout>

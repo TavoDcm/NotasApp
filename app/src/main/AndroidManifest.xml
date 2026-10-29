@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="NotasApp"
+        android:allowBackup="false"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.NotasApp">
+
+        <activity
+            android:name=".ui.RegistroActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.CrearNotaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ListadoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

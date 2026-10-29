@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/blanco">
+
+    <TextView
+        android:id="@+id/tituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NotasApp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_marino"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:id="@+id/subtituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesión para ver tus notas"
+        android:textColor="@color/gris"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloLogin" />
+
+    <EditText
+        android:id="@+id/loginCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/texto"
+        android:textColorHint="@color/gris"
+        android:backgroundTint="@color/azul_principal"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtituloLogin" />
+
+    <EditText
+        android:id="@+id/loginClave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/texto"
+        android:textColorHint="@color/gris"
+        android:backgroundTint="@color/azul_principal"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginCorreo" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:backgroundTint="@color/azul_principal"
+        android:textColor="@color/blanco"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginClave" />
+
+    <ProgressBar
+        android:id="@+id/loginCarga"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        android:layout_marginTop="14dp"
+        android:indeterminateTint="@color/azul_principal"
+        app:layout_constraintTop_toBottomOf="@id/botonLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/irRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear cuenta"
+        android:textColor="@color/azul_marino"
+        android:backgroundTint="@color/azul_claro"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonLogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

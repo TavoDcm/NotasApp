@@ -1,0 +1,43 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android Studio
+.gradle/
+.idea/
+.kotlin/
+**/build/
+local.properties
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Base de datos SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+
+# Archivos privados
+.env
+.env.*
+
+# Archivos de firma y configuracion privada
+*.jks
+*.keystore
+secrets.properties
